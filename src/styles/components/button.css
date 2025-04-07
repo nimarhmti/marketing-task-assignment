@@ -1,0 +1,7 @@
+.btn {
+  @apply outline-none h-[41px] text-[12px]  rounded-base flex items-center justify-center cursor-pointer  transition duration-200 ease-in-out;
+}
+
+.btn-primary {
+  @apply bg-primary hover:bg-primary-dark focus:bg-primary-dark text-white;
+}

@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white h-[64px] flex items-center justify-center md:h-[70px]">
-      <div className="flex items-center justify-between w-full container">
+      <div className="flex items-center justify-between w-full container ">
         <div className="flex items-center justify-center gap-x-4">
           <div className="chip md:hidden" onClick={drawerHandler}>
             <IconMenu className="w-6 h-6 stroke-secondary" fill="none" />

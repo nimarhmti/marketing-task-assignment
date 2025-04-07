@@ -41,6 +41,13 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      padding: {
+        xl: "80px",
+        "2xl": "120px",
+        "3xl": "160px",
+      },
+    },
     screens: {
       xs: "320px",
       sm: "640px",

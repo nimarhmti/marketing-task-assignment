@@ -9,7 +9,7 @@ export default function SvgIcon(props: smsType) {
         strokeWidth="1.5"
         strokeMiterlimit="10"
         strokeLinecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
       <path
         d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9"

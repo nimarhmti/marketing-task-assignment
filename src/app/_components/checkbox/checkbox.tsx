@@ -27,16 +27,17 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
     );
 
     const checkIconClasses = classNames(
-      "absolute top-1/2 left-1/2 stroke-white -translate-x-1/2 -translate-y-1/2 w-5 h-5 opacity-100 transition-opacity group-hover:stroke-green-600 ",
+      "absolute top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 w-5 h-5 opacity-100 transition-opacity  ",
       {
         "stroke-green-600": props.checked,
+        "stroke-white": !props.checked,
       }
     );
 
     return (
       <div className={containerClasses}>
         <label
-          className="flex items-center gap-1 cursor-pointer h-10 rounded-base border border-gray-1 pr-2 md:rounded-md md:pr-4 md:gap-2 group"
+          className="flex items-center gap-1 cursor-pointer h-10 rounded-base border border-gray-1 pr-2 md:rounded-md md:pr-4 md:gap-2 "
           htmlFor={id}
         >
           <div className="relative h-6 w-6">

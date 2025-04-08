@@ -16,7 +16,7 @@ const colors = {
   "black-100": "#F5F5F5",
   "black-200": "#E5E5E5",
   "black-300": "#D4D4D4",
-  "black-400": "#A3A3A3",
+  "black-400": "#B1B1B1",
   "black-500": "#737373",
   "black-600": "#525252",
   "black-700": "#404040",

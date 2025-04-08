@@ -10,3 +10,4 @@ export { default as IconPlan } from "./src/plan";
 export { default as IconStrategy } from "./src/strategy";
 export { default as IconMoney } from "./src/money";
 export { default as IconTime } from "./src/time";
+export { default as IconArrow } from "./src/arrow";

@@ -30,7 +30,7 @@ const colors = {
   "gray-4": "#CBD5E0",
   "gray-5": "#A0AEC0",
   "gray-6": "#718096",
-  "gray-7": "#4A5568",
+  "gray-7": "#515151",
   "gray-8": "#2D3748",
   "gray-9": "#1A202C",
 };
@@ -71,7 +71,7 @@ const config: Config = {
         "2xs": "10px",
         xs: "12px",
         sm: "14px",
-        base: "16px",
+        "2sm": "16px",
         "base-lg": "18px",
         lg: "20px",
         xl: "24px",

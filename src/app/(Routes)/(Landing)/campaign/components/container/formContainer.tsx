@@ -3,7 +3,7 @@ import Form from "../form/form";
 
 export default function FormContainer() {
   return (
-    <div className="w-full flex items-center justify-center">
+    <div className="w-full flex items-center justify-center ">
       <div className="container py-10 md:py-[60px] flex flex-col items-center ">
         <h4 className="text-center text-base-lg font-bold text-black-900 md:text-lg">
           فرم دریافت مشاوره

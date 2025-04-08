@@ -16,7 +16,7 @@ const colors = {
   "black-100": "#F5F5F5",
   "black-200": "#E5E5E5",
   "black-300": "#D4D4D4",
-  "black-400": "#A3A3A3",
+  "black-400": "#B1B1B1",
   "black-500": "#737373",
   "black-600": "#525252",
   "black-700": "#404040",
@@ -25,7 +25,7 @@ const colors = {
 
   // Gray Scale
   "gray-1": "#ECECEC",
-  "gray-2": "#EDF2F7",
+  "gray-2": "#E3E3E3",
   "gray-3": "#E2E8F0",
   "gray-4": "#CBD5E0",
   "gray-5": "#A0AEC0",
@@ -61,6 +61,9 @@ const config: Config = {
       colors: {
         ...colors,
         ...tailwindColors,
+      },
+      backgroundImage: {
+        "gradient-primary": "linear-gradient(0deg, #7A3DE2 0%, #43217C 100%)",
       },
       borderRadius: {
         base: "8px",

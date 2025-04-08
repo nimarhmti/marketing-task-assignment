@@ -14,3 +14,4 @@ export { default as IconArrow } from "./src/arrow";
 export { default as IconCheck } from "./src/check";
 export { default as IconSms } from "./src/sms";
 export { default as IconCall } from "./src/call";
+export { default as IconPlus } from "./src/plus";

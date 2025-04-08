@@ -27,9 +27,9 @@ const colors = {
   // Gray Scale
   "gray-1": "#ECECEC",
   "gray-2": "#E3E3E3",
-  "gray-3": "#E2E8F0",
+  "gray-3": "#6B6B6B",
   "gray-4": "#CBD5E0",
-  "gray-5": "#A0AEC0",
+  "gray-5": "#6B6B6B",
   "gray-6": "#8A8A8A",
   "gray-7": "#515151",
   "gray-8": "#2D3748",

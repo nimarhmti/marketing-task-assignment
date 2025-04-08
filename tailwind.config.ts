@@ -5,6 +5,7 @@ const colors = {
   // brand color
   white: "#ffffff",
   white2: "#FCFCFC",
+  error: "#E13333",
   primary: "#7a3de2",
   "primary-dark": "#5228c7",
   "base-light": "#ffffff",

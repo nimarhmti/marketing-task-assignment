@@ -28,7 +28,7 @@ const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
     return (
       <div className={`flex flex-col ${containerClassName}`}>
         {label && (
-          <label className="text-xs font-medium text-secondary mb-2 md:text-sm md:mb-4">
+          <label className="text-xs font-medium text-secondary mb-2 md:text-sm md:font-semibold md:mb-4">
             {label}
           </label>
         )}

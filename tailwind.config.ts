@@ -5,6 +5,7 @@ const colors = {
   // brand color
   white: "#ffffff",
   white2: "#FCFCFC",
+  error: "#E13333",
   primary: "#7a3de2",
   "primary-dark": "#5228c7",
   "base-light": "#ffffff",
@@ -29,7 +30,7 @@ const colors = {
   "gray-3": "#E2E8F0",
   "gray-4": "#CBD5E0",
   "gray-5": "#A0AEC0",
-  "gray-6": "#718096",
+  "gray-6": "#8A8A8A",
   "gray-7": "#515151",
   "gray-8": "#2D3748",
   "gray-9": "#1A202C",
@@ -68,6 +69,9 @@ const config: Config = {
       borderRadius: {
         base: "8px",
         md: "16px",
+      },
+      boxShadow: {
+        custom: "0px 2px 4px 0px #00000026",
       },
       fontSize: {
         "3xs": "8px",

@@ -35,17 +35,17 @@ export default function Slider() {
           // when window width is >= 320px
           320: {
             slidesPerView: 2,
-            spaceBetween: 200,
+            spaceBetween: 16,
           },
           // when window width is >= 768px
           768: {
             slidesPerView: 3,
-            spaceBetween: 200,
+            spaceBetween: 24,
           },
           // when window width is >= 1024px
           1024: {
             slidesPerView: 4,
-            spaceBetween: 200,
+            spaceBetween: 24,
           },
           1440: {
             slidesPerView: 4,
@@ -54,7 +54,7 @@ export default function Slider() {
         }}
       >
         {cards.map((card) => (
-          <SwiperSlide key={card.id}>
+          <SwiperSlide key={card.id} className="!w-fit">
             <Card
               icon={card.icon}
               title={card.title}
@@ -66,7 +66,7 @@ export default function Slider() {
 
       {/* Custom Navigation Buttons */}
       <button
-        onClick={() => swiperRef.current?.slideNext()}
+        onClick={() => swiperRef.current?.slidePrev()}
         className={`hidden bg-white absolute -right-4 top-1/2 -translate-y-1/2 chip !p-1 transition-colors z-10 md:block ${
           isBeginning ? "cursor-not-allowed" : ""
         }`}
@@ -75,14 +75,14 @@ export default function Slider() {
       >
         <IconArrow
           className={`w-6 h-6 ${
-            isBeginning ? "fill-black-400" : "fill-black-900"
+            isBeginning ? "fill-black-400" : "fill-gray-7"
           }`}
           fill="none"
           viewBox="0 0 24 24"
         />
       </button>
       <button
-        onClick={() => swiperRef.current?.slidePrev()}
+        onClick={() => swiperRef.current?.slideNext()}
         className={`hidden bg-white absolute -left-4 top-1/2 -translate-y-1/2 chip !p-1 transition-colors z-10 md:block ${
           isEnd ? "cursor-not-allowed" : ""
         }`}
@@ -91,7 +91,7 @@ export default function Slider() {
       >
         <IconArrow
           className={`w-6 h-6 rotate-180 ${
-            isEnd ? "fill-black-400" : "fill-black-900"
+            isEnd ? "fill-black-400" : "fill-gray-7"
           }`}
           fill="none"
           viewBox="0 0 24 24"

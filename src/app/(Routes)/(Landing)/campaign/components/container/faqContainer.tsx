@@ -1,5 +1,6 @@
 "use client";
 import Accordion from "@/app/_components/accordion/accordion";
+import Motion from "@/app/_components/motion/motion";
 import React from "react";
 
 const faqItems = [
@@ -22,7 +23,7 @@ const faqItems = [
       "هزینه خدمات دیجیتال مارکتینگ بسته به نوع خدمات، حجم کار و نیازهای خاص هر کسب‌وکار متفاوت است. ما پس از بررسی دقیق نیازهای شما، یک پیشنهاد قیمت مناسب ارائه می‌دهیم که متناسب با بودجه و اهداف شما باشد.",
   },
   {
-    id: "b2a6c1f4-2345-4ec2-a7c9-a890de32f4cc",
+    id: "b2a6-c1,f4-2345-4ec2-a7c9-a890de32f4cc",
     title: "راهکارهای جذب ترافیک وب سایت چیست؟",
     description:
       "مدت زمان مشاهده نتایج بستگی به نوع خدمات و استراتژی‌های به کار گرفته شده دارد. برخی از نتایج مانند افزایش ترافیک وب‌سایت ممکن است در کوتاه‌مدت قابل مشاهده باشند، در حالی که نتایج دیگر مانند بهبود رتبه سئو ممکن است به زمان بیشتری نیاز داشته باشند.",
@@ -41,25 +42,49 @@ export default function FaqContainer() {
       <div className=" container py-10 md:py-[100px]">
         <div className="bg-transparent flex flex-col gap-6 md:bg-white md:flex-row md:px-5 md:py-10 lg:px-10 lg:py-20">
           <div className="flex flex-col text-center md:text-start ">
-            <h6 className="text-base-lg font-bold text-black-900 lg:text-[32px]">
-              FAQ
-            </h6>
-            <p className="text-2sm mt-2 font-bold text-black-900 lg:text-xl lg:mt-4">
-              سوالات متداولی که از ما می‌پرسید
-            </p>
-            <p className="hidden text-2sm font-medium  md:block md:mt-[9px] text-secondary">
-              سوالات متداولی که ممکن است نیاز شما نیز باشند در اینجا پاسخ داده
-              شده اند:
-            </p>
+            <Motion
+              initial={{ opacity: 0, y: -50 }} // Start from the right
+              animate={{ opacity: 1, y: 0 }} // Move to the center
+              transition={{ duration: 0.289 }}
+            >
+              <h6 className="text-base-lg font-bold text-black-900 lg:text-[32px]">
+                FAQ
+              </h6>
+            </Motion>
+            <Motion
+              initial={{ opacity: 0, y: -50 }} // Start from the right
+              animate={{ opacity: 1, y: 0 }} // Move to the center
+              transition={{ duration: 0.289, delay: 0.2 }}
+            >
+              <p className="text-2sm mt-2 font-bold text-black-900 lg:text-xl lg:mt-4">
+                سوالات متداولی که از ما می‌پرسید
+              </p>
+            </Motion>
+            <Motion
+              initial={{ opacity: 0, x: -50 }} // Start from the right
+              animate={{ opacity: 1, x: 0 }} // Move to the center
+              transition={{ duration: 0.5, delay: 0.6 }}
+            >
+              <p className="hidden text-2sm font-medium  md:block md:mt-[9px] text-secondary">
+                سوالات متداولی که ممکن است نیاز شما نیز باشند در اینجا پاسخ داده
+                شده اند:
+              </p>
+            </Motion>
           </div>
           <div>
-            <div className="space-y-4">
-              {faqItems.map((item) => (
-                <Accordion
+            <div className="space-y-2 md:space-y-4">
+              {faqItems.map((item, index) => (
+                <Motion
                   key={item.id}
-                  title={item.title}
-                  description={item.description}
-                />
+                  initial={{ opacity: 0, x: 50 }} // Start from the right
+                  animate={{ opacity: 1, x: 0 }} // Move to the center
+                  transition={{ duration: 0.5, delay: index * 0.12 }} // Add delay based on index
+                >
+                  <Accordion
+                    title={item.title}
+                    description={item.description}
+                  />
+                </Motion>
               ))}
             </div>
           </div>
